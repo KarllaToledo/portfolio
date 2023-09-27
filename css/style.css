@@ -11,16 +11,20 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: rgb(27, 24, 24);
     padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content:right;
 }
 
 header h1 {
-    color: #dc3545;
-    font-size: 2.5rem;
+    color: #f70094;
+    font-size: 4.5rem;
+    align-items:center;
+    padding-top: 45px;
+    padding-left: 85px;
+
 }
 
 header span {
@@ -29,9 +33,13 @@ header span {
 
 header .navegacao-primaria{
     display: flex;
-    gap: 75px;
+    gap: 85px;
     align-items: center;
     width: 100%;
+    box-shadow: #8a8287 2px 2px 5px 5px;
+    padding-top: 35px;
+    padding-left: 65%;
+
 }
 
 head .navegacao-primaria li a {
@@ -43,14 +51,16 @@ head .navegacao-primaria li a {
 /* dowload CV SECAO */
 
 .section-div {
-    animation: inicializar .7s forwards;
-    background-color: black;
+    animation: inicializar .3s forwards;
+    background-color:rgb(27, 24, 24);
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
-    align-items: center;
-    gap: 60px;
-    padding: 60px;
+    align-items:center;
+    gap: 80px;
+    padding: 80px;
+    padding-left: 45px;
+    padding-top: 100px;
 }
 
 .section-div div {
@@ -68,16 +78,26 @@ head .navegacao-primaria li a {
 
 .section-div div p {
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 200;
+    font-weight: 200px;
     color:#f7f7f7;
 }
 
 .section-div div a {
     justify-self: start;
-    color: #fff;
-    padding: 15px 40px;
+    color: #3f88e8;
+    padding: 25px 25px;
     border-radius: 5px;
-    border: 2px solid white;
+    border: 6px solid rgb(163, 156, 156);
+    box-shadow: #8a8287 2px 2px 5px 5px;
+    padding-left: 15%;
+    justify-content: center;
+    align-items:center;
+    padding-top: 35px;
+    padding-left: 35px;
+    top: 55%;
+    left: 55%;
+    transform: translate(75%, 75%);
+
 }
 .digitando::after {
     content: '|';
@@ -87,18 +107,40 @@ head .navegacao-primaria li a {
 
 }
 
-.section-div img {
-    max-width: 100%;
+.imagem-redonda {
+    width: 400px; 
+    height: 400px; 
+    border-radius: 50%;
+    overflow: hidden;
     box-shadow: rgb(109, 108, 108) 2px 2px 10px 10px;
 }
 
+.imagem-redonda img {
+     width: 100%; /* Certifique-se de que a imagem ocupa todo o espaço dentro do círculo */
+    height: auto;
+
+    
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    padding-top: 45px;
+    padding-inline: auto;
+  }
 .carousel-control-prev {
-    margin-left: -10%;
-  }
-  
-  .carousel-control-next {
-    margin-right: -10%;
-  }
+    margin-left: -5%;
+}
+
+.carousel-control-next {
+    margin-right: -5%;
+}
+.d-block w-100{
+    position: absolute;
+    top: 100%;
+    left: 80%;
+    transform: translate(50%, 50%);
+}
 
 @keyframes pisca {
     from {
@@ -123,7 +165,218 @@ head .navegacao-primaria li a {
 
     }
 }
-/*RESPONSIVO*/
+#s-projects {
+    padding: 96px 48px;
+    text-align: center;
+    background-color:  rgb(27, 24, 24)
+}
+
+@media screen and (max-width: 992px) {
+    #s-projects {
+        padding:48px 24px
+    }
+}
+
+#s-projects .grid-layout h2 {
+    padding-bottom: 24px;
+    color: #a7cef8;
+    font-size: 3rem;
+    font-weight: 300;
+    text-shadow: 5px 5px 5px rgba(249, 166, 232, 0.975)
+}
+
+#s-projects .grid-layout h2 span {
+    color: #986dff
+}
+
+#s-projects .grid-layout #projects {
+    margin: 24px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    text-align: left
+}
+
+#s-projects .grid-layout #projects .curriculo {
+    border: 1px solid rgb(241, 6, 131);
+
+}
+
+#s-projects .grid-layout #projects .curriculo:hover {
+    border: 1px solid rgb(241, 6, 131)
+}
+
+#s-projects .grid-layout #projects .cardapio {
+    border: 1px solid #00a3ff
+}
+
+#s-projects .grid-layout #projects .cardapio:hover {
+    border: 1px solid #00a3ff
+}
+
+#s-projects .grid-layout #projects .energias {
+    border: 1px solid #a6fb98
+}
+
+#s-projects .grid-layout #projects .energias:hover {
+    border: 1px solid #a6fb98
+}
+
+#s-projects .grid-layout #projects>article {
+    height: auto;
+    padding: 32px;
+    margin: 8px;
+    flex-basis: calc(33% - 20px);
+    flex-grow: 1;
+    border: 1px solid #111;
+    transition: 1s all ease;
+    background-color:  rgb(27, 24, 24);
+    height: auto
+}
+
+#s-projects .grid-layout #projects>article:hover {
+    border: 1px solid #986dff
+}
+
+@media screen and (max-width: 1200px) {
+    #s-projects .grid-layout #projects>article {
+        flex-basis:calc(50% - 20px)
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #s-projects .grid-layout #projects>article {
+        flex-basis:calc(100% - 20px)
+    }
+}
+
+#s-projects .grid-layout #projects>article h3 {
+    color: #ddd0f1;
+    font-size: 2.4rem;
+    font-weight: 300;
+    font-style: italic;
+}
+
+#s-projects .grid-layout #projects>article p {
+    line-height: 24px;
+    margin: 24px 0px;
+    color: #9ca3af;
+    line-height: 3.2rem;
+    font-size: 1.8rem
+}
+
+#s-projects .grid-layout #curriculo {
+    color:rgb(241, 6, 131)
+}
+
+#s-projects .grid-layout #curriculo::after {
+    background: linear-gradient(270deg, rgb(241, 6, 131) 0%, #17161d 100%)
+}
+
+#s-projects .grid-layout #cardapio {
+    color: #00a3ff
+}
+
+#s-projects .grid-layout #cardapio::after {
+    background: linear-gradient(270deg, #00a3ff 0%, #17161d 100%)
+}
+
+#s-projects .grid-layout #energias {
+    color: #a6fb98
+}
+
+#s-projects .grid-layout #energias::after {
+    background: linear-gradient(270deg, #a6fb98 0%, #17161d 100%)
+}
+
+#s-projects .grid-layout a {
+    color: #986dff;
+    position: relative;
+    font-size: 2rem;
+    font-weight: 400
+}
+
+#s-projects .grid-layout a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -7px;
+    left: 0;
+    background: linear-gradient(270deg, #986dff 0%, #17161d 100%);
+    transform-origin: bottom right;
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1)
+}
+
+#s-projects .grid-layout a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left
+}
+
+#s-projects .grid-layout a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -7px;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1)
+}
+
+#s-projects .grid-layout a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left
+}
+
+#f-contato {
+    padding: 96px 48px;
+    text-align: center;
+    background-color:  rgb(27, 24, 24);
+    
+}
+
+#f-contato .formulario h3 {
+    padding-bottom: 24px;
+    color: #a7cef8;
+    font-size: 3rem;
+    font-weight: 300;
+    text-shadow: 5px 5px 5px rgba(249, 166, 232, 0.975)
+}
+
+
+form {
+    background-color: rgb(232, 198, 198);
+    padding: 20px;
+    border-radius: 35px;
+    box-shadow: 0 0 10px rgba(47, 46, 46, 0.3);
+    max-width: 400px;
+    width: 100%;
+}
+
+form label,
+form input,
+form textarea,
+form input[type="submit"] {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+form input[type="submit"] {
+    background-color: #303133;
+    color: rgb(67, 19, 244);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: black;
+}
 
 @media(max-width: 992px) {
     .section-div img {
@@ -138,8 +391,52 @@ head .navegacao-primaria li a {
 
 }
 
+footer {
+        background-color: rgb(55, 54, 54);
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 15px 0 30px 0;
+        margin-bottom: 0 !important;
+        color: black; 
+        font-style: italic;
+        text-align: center;
+        text-shadow: 2px 2px 10px whitesmoke;
+        font-size: 2.5rem;
+    }
+
+@media all and (max-width: 768px){
+.coluna, .coluna.colunatres {
+    display: block;
+    width: 50%;
+    padding: 0;
+    margin: 5px auto; 
+    float: none;
+}
+}
+
+header {
+    position: relative;
+    width: 100%;
+    margin-left: 0px;
+    text-align: center;
+   
+}
+
+/* Responsivo */
 /* mobile */
 @media (max-width: 480px) {
+    .section-div{display: block;}
+    .imagem-redonda {
+        width: 200px; 
+        height: 200px; 
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: rgb(109, 108, 108) 2px 2px 10px 10px;
+    }
+    header .navegacao-primaria{
+        display: block;
+    }
 }
 /* Extra small devices */
 @media |(min-widyh: 481px) nd (max-width: 767px) {

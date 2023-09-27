@@ -11,3 +11,4 @@ function ativaLetra (elemento) {
 
 const titulo= document.querySelector('.digitando');
 ativaLetra(titulo);
+

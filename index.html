@@ -20,16 +20,18 @@
     
     
     <header>
-        <h1>Karlla <span>Toledo</span></h1>
         <nav">
             <ul class=" navegacao-primaria">
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
+                
             </ul>
+            <h1>Karlla <span>Toledo</span></h1>
         </nav>
     </header>
-    <section aria-label="seção curriculo dowload Karlla Toledo" class="section-div"> 
+    
+     <section aria-label="seção curriculo dowload Karlla Toledo" class="section-div"> 
         <div>
             <h2>"Olá Mundo!" Eu Sou...</h2>
             <h2 class="digitando">Web Developer Front-End e Mãe</h2>
@@ -38,12 +40,14 @@
 Busco aperfeiçoar minhas habilidades e adquirir novos conhecimentos, sempre focada em garantir a qualidade dos projetos em que trabalho. Além de estar ingressada no curso de capacitação com certificação oferecido pelo projeto "ElasNaTech" através da JA Brasil, construindo conhecimentos em noções básicas de internet, noções básicas de programação, Git e Github, VS Code, JavaScript, HTML e Python.</p>.</p>
                 <a href="Documentos/Profile (1).pdf"> Dowload CV</a>
         </div>
-        <img src="imagens portfolio/Foto Karlla.jpg" alt="Foto Karlla">
-
+        <div class="imagem-redonda">
+          <img src="imagens portfolio/Foto Karlla.jpg" alt="Foto Karlla">
+        </div>
         <script src="script.js"></script>
     </section>
-    <div class="containerCarousel row" style="background-color: black;">
-    <div class="col-3"></div>
+ 
+    <div class="containerCarousel row" style="background-color: rgb(27, 24, 24);">
+    <div class="col-1"></div>
     <div class="col">
     <section id="carouselSite" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner d-block w-100">
@@ -67,9 +71,89 @@ Busco aperfeiçoar minhas habilidades e adquirir novos conhecimentos, sempre foc
         </a>
       </section>
       </div>
-      <div class="col-3"></div>
+      <div class="col-1"></div>
     </div>
-    </body>
+      
+    <section id="s-projects">
+      <div class="grid-layout">
+        <h2 class="delaySmallReveal">Projetos Destaque <span>.</span></h2>
+        <div id="projects">
+          <article class="intervalCardReveal curriculo">
+            <h3>Curriculo HTML</h3>
+            <p>
+              Site desenvolvido no programa ELASNaTech criando o currículo, feito em HTML.
+            </p>
+
+            <a
+              href="https://karllatoledo.github.io/curriculo/"
+              rel="noopener"
+              target="_blank"
+              id="curriculo"
+              >Visualizar projeto
+            </a>
+          </article>
+
+          <article class="intervalCardReveal cardapio">
+            <h3>Cardápio</h3>
+            <p>
+              Site desenvolvido no programa ElasNaTech, criando um cardápio, feito em HTML e CSS.
+            </p>
+
+            <a
+              href="https://karllatoledo.github.io/cardapio/"
+              rel="noopener"
+              target="_blank"
+              id="cardapio"
+              >Visualizar projeto
+            </a>
+          </article>
+
+          <article class="intervalCardReveal energias">
+            <h3>Projeto ODS</h3>
+            <p>
+              Site desenvolvido no programa ElasNaTech, com base na ODS- Energias Sustentáveis.
+            </p>
+            <a
+              href="https://karllatoledo.github.io/desafio3/"
+              rel="noopener"
+              target="_blank"
+              id="energias"
+              >Visualizar projeto
+            </a>
+          </article>
+</div>
+
+</section>
+<section id="f-contato">
+  <div class="formulario">
+    <h3 class="delaySmallReveal">Entre em contato comigo <span>.</span></h3>
+    <div id="contato">
+    <center style="background-color: rgb(27, 24, 24); padding-bottom: 10px;">
+      <form id="meuFormulario" style="align-self: center;">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required><br>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required><br>
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br>
+
+          <input type="submit" value="Enviar">
+      </form>
+    </center>
+    <script src="sendemail.js"></script>
+  </div>
+  </div>
+</section>
+<footer>
+    <h6> Copyright © 2023-Desenvolvido por: Karlla Toledo, durante o programa ElasNaTech, promovido pela J.A Brasil.</h6>
+    <h6 class="centralizado">TODOS DIREITOS RESERVADOS.</h6>
+</footer>
+
+</body>
+</html>
+</body>
 </html>
 
 
