@@ -322,6 +322,7 @@ head .navegacao-primaria li a {
 
 section#contacts {
     background-color: rgb(27, 24, 24);
+    padding-top: 20px;
 }
 
 section#contacts .contacts .container {
@@ -335,7 +336,7 @@ section#contacts .contacts .container h2 {
     font-size: 3.2rem;
     color: #e6e5e7;
     font-weight: 600;
-    margin-bottom: 10rem
+    margin-bottom: 1rem
 }
 
 section#contacts .contacts .icons {
