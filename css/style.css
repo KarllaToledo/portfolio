@@ -28,24 +28,24 @@ header h1 {
 }
 
 header span {
-    color:#fff; 
+    color:#f7c7fc; 
 }
 
 header .navegacao-primaria{
     display: flex;
-    gap: 85px;
-    align-items: center;
+    gap: 75px;
     width: 100%;
     box-shadow: #8a8287 2px 2px 5px 5px;
-    padding-top: 35px;
+    padding-top: 15px;
     padding-left: 65%;
+    font-size: 1.3rem;
 
 }
 
 head .navegacao-primaria li a {
     padding: 10px;
-    color:#fff;
-    font-size: 1.3rem;
+    color:#f9f5fc;
+    font-size: 4.5rem;
 }
 
 /* dowload CV SECAO */
@@ -122,19 +122,7 @@ head .navegacao-primaria li a {
     
 }
 
-.carousel-inner img {
-    width: 100%;
-    height: auto;
-    padding-top: 45px;
-    padding-inline: auto;
-  }
-.carousel-control-prev {
-    margin-left: -5%;
-}
 
-.carousel-control-next {
-    margin-right: -5%;
-}
 .d-block w-100{
     position: absolute;
     top: 100%;
@@ -332,10 +320,86 @@ head .navegacao-primaria li a {
     transform-origin: bottom left
 }
 
+section#contacts {
+    background-color: rgb(27, 24, 24);
+}
+
+section#contacts .contacts .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+section#contacts .contacts .container h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 3.2rem;
+    color: #e6e5e7;
+    font-weight: 600;
+    margin-bottom: 10rem
+}
+
+section#contacts .contacts .icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7.5rem;
+    justify-content: center
+}
+
+section#contacts .contacts .icons .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s
+}
+
+section#contacts .contacts .icons .icon:hover {
+    transform: scale(1.2)
+}
+
+section#contacts .contacts .icons .icon a {
+    width: fit-content
+}
+
+section#contacts .contacts .icons .icon a:first-child {
+    margin-bottom: 2rem
+}
+
+section#contacts .contacts .icons .icon a:nth-child(2) {
+    margin-bottom: 1rem
+}
+
+section#contacts .contacts .icons .icon a:last-child p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #828282
+}
+
+section#contacts .contacts .icons .icon a p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #F9F9F9
+}
+
+section#contacts .contacts .icons .icon .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(83, 78, 78);
+    border-radius: 50%
+}
+
+section#contacts .contacts .icons .icon .box img {
+    padding: 1.5rem
+}
+
+
 #f-contato {
     padding: 96px 48px;
     text-align: center;
     background-color:  rgb(27, 24, 24);
+    font-family:Arial, Helvetica, sans-serif;
     
 }
 
@@ -349,33 +413,38 @@ head .navegacao-primaria li a {
 
 
 form {
-    background-color: rgb(232, 198, 198);
+    background-color: rgb(83, 78, 78);
     padding: 20px;
     border-radius: 35px;
-    box-shadow: 0 0 10px rgba(47, 46, 46, 0.3);
-    max-width: 400px;
+    box-shadow: 0 0 10px rgba(200, 191, 191, 0.3);
+    max-width: 25rem;
     width: 100%;
+    color: rgb(171, 190, 241);
+    font-weight: bold;
 }
 
 form label,
 form input,
 form textarea,
 form input[type="submit"] {
-    display: block;
-    margin-bottom: 10px;
+    display:inline-flex;
+    border-color: #0b57ee;
+    margin-bottom: 12px;
     width: 100%;
+
 }
 
-form input[type="submit"] {
+form button[type="submit"] {
     background-color: #303133;
-    color: rgb(67, 19, 244);
+    color: rgb(76, 32, 235);
     border: none;
     padding: 10px 15px;
     cursor: pointer;
 }
 
-form input[type="submit"]:hover {
-    background-color: black;
+
+form button[type="submit"]:hover {
+    background-color: rgb(72, 3, 47);
 }
 
 @media(max-width: 992px) {
@@ -392,7 +461,7 @@ form input[type="submit"]:hover {
 }
 
 footer {
-        background-color: rgb(55, 54, 54);
+        background-color: rgb(27, 24, 24);
         width: 100%;
         margin: 0 auto;
         overflow: hidden;
@@ -400,9 +469,12 @@ footer {
         margin-bottom: 0 !important;
         color: black; 
         font-style: italic;
-        text-align: center;
+        font-weight: 700;
+        text-align:center;
         text-shadow: 2px 2px 10px whitesmoke;
-        font-size: 2.5rem;
+        font-size: 1rem;
+        box-shadow: #8a8287 2px 2px 5px 5px;
+
     }
 
 @media all and (max-width: 768px){

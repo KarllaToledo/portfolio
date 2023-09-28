@@ -1,26 +1,34 @@
 /*Formulario de Contato*/
 
-document.getElementById("meuFormulario").addEventListener("submit", function(event) {
-    event.preventDefault();
+class FormSubmit {
+  this.settings = settings;
+  this.form = document.querySelector(settings.form);
+  this.formButton = document.querySelector(settings.button)
+  if (this.form) {
+    this.url = this.form.getAttribute("action");
+  }
+}
 
-    // Coletar dados do formulário
-    var nome = document.getElementById("nome").value;
-    var email = document.getElementById("email").value;
-    var mensagem = document.getElementById("mensagem").value;
+displaySucess() {
+this.form.innerHtml = this.settings.sucess;
 
-    // Validar os campos (adicionar validações personalizadas conforme necessário)
+}
 
-    const formulario = document.getElementById("miFormulario");
-    const formData = new FormData(formulario);
-  
-  
-    emailjs.sendForm("tu_service_id", "tu_template_id", formData)
-      .then(function(response) {
-        console.log("Correo electrónico enviado con éxito", response);
-        alert("Formulario enviado con éxito");
-      }, function(error) {
-        console.error("Error al enviar el correo electrónico", error);
-        alert("Hubo un error al enviar el formulario");
-      });
+displayError() {
+  this.form.innerHtml = this.settings.error;
+}
+
+init() {
+  if (this.form) this.formButton.addEventListerner("Click",() => this.displaySucess());
+return this;
+}
+
+const formSubmit = new FormSubmit({
+  form: "[data-form]",
+  button:"[data-button]",
+  sucess: "<h1 class= 'sucess'> Mensagem Enviada!</h1>"
+  error: "<h1>Não foi possível enviar sua mensagem.</h1>"
+
 });
 
+formSubmit.init();
