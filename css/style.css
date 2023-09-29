@@ -19,7 +19,7 @@ header {
 }
 
 header h1 {
-    color: #f70094;
+    color: #ff00bf;
     font-size: 4.5rem;
     align-items:center;
     padding-top: 45px;
@@ -28,7 +28,7 @@ header h1 {
 }
 
 header span {
-    color:#f7c7fc; 
+    color:white; 
 }
 
 header .navegacao-primaria{
@@ -322,7 +322,6 @@ head .navegacao-primaria li a {
 
 section#contacts {
     background-color: rgb(27, 24, 24);
-    padding-top: 20px;
 }
 
 section#contacts .contacts .container {
@@ -332,13 +331,12 @@ section#contacts .contacts .container {
 }
 
 section#contacts .contacts .container h2 {
-    font-family: 'DM Sans', sans-serif;
-    font-size: 3.2rem;
-    color: #e6e5e7;
-    font-weight: 600;
-    margin-bottom: 1rem
+    padding-bottom: 24px;
+    color: #a7cef8;
+    font-size: 3rem;
+    font-weight: 300;
+    text-shadow: 5px 5px 5px rgba(249, 166, 232, 0.975);
 }
-
 section#contacts .contacts .icons {
     display: flex;
     flex-wrap: wrap;
@@ -409,7 +407,7 @@ section#contacts .contacts .icons .icon .box img {
     color: #a7cef8;
     font-size: 3rem;
     font-weight: 300;
-    text-shadow: 5px 5px 5px rgba(249, 166, 232, 0.975)
+    text-shadow: 5px 5px 5px rgba(249, 166, 232, 0.975);
 }
 
 
