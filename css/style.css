@@ -14,12 +14,11 @@ header {
     background-color: rgb(27, 24, 24);
     padding: 10px;
     display: flex;
-    align-items: center;
     justify-content:right;
 }
 
 header h1 {
-    color: #ff00bf;
+    color: #3c79d4;
     font-size: 4.5rem;
     align-items:center;
     padding-top: 45px;
@@ -31,15 +30,23 @@ header span {
     color:white; 
 }
 
+header .header-menu{
+    display: flex;
+    align-items: flex-end;
+}
+
+header .header-logo-menu{
+    box-shadow: #8a8287 2px 2px 5px 5px;
+    display: flex;
+    width: 100%;
+}
+
 header .navegacao-primaria{
     display: flex;
-    gap: 75px;
-    width: 100%;
-    box-shadow: #8a8287 2px 2px 5px 5px;
+    gap: 70px;
     padding-top: 15px;
-    padding-left: 65%;
+    padding-left: 85%;
     font-size: 1.3rem;
-
 }
 
 head .navegacao-primaria li a {
@@ -47,6 +54,7 @@ head .navegacao-primaria li a {
     color:#f9f5fc;
     font-size: 4.5rem;
 }
+
 
 /* dowload CV SECAO */
 
@@ -121,7 +129,6 @@ head .navegacao-primaria li a {
 
     
 }
-
 
 .d-block w-100{
     position: absolute;
@@ -507,6 +514,9 @@ header {
     }
     header .navegacao-primaria{
         display: block;
+    }
+    header .header-logo-menu{
+        display: grid;
     }
 }
 /* Extra small devices */
